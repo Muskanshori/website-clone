@@ -1,0 +1,457 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+}
+
+.nav-bar {
+  width: 100%;
+  height: 8vh;
+  display: flex;
+  background-color: #27359a;
+  color: white;
+}
+.logo {
+  margin: 12px;
+}
+.logo img {
+  height: 46px;
+  width: 70px;
+}
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 50px ;
+}
+.links {
+  margin-right: 90px;
+  display: flex;
+  justify-content: space-evenly;
+  gap: 30px;
+}
+.links li {
+  list-style: none;
+}
+.links li a {
+  text-decoration: none;
+  color: white;
+}
+.login {
+  border-radius: 30px;
+  background-color: #737ab0;
+}
+.login button {
+  color: white;
+  background: none;
+  border: none;
+  text-align: center;
+  height: 34px;
+  width: 90px;
+}
+
+.section-1 {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+  width: 100%;
+  background-image: linear-gradient(#27359a, #374088, #454a72);
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    width: 50%;
+    height: 100%;
+    color: white;
+    padding: 0px 30px ;
+}
+.text h1 ,.text h2{
+    font-size: 3rem;   
+}
+.text button{
+    width: 12vw;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(66, 66, 194, 0.523);
+    font-size: large;
+    color: white;
+}
+
+.image {
+    width: 55%;
+    height: 100%;
+    position: relative; 
+    margin: 80px;
+}
+.image img {
+    position: absolute;
+    border-radius: 50%;
+    border: 10px solid grey;
+    bottom: 0%;
+    height: 50vh;
+    width: 30vw;
+
+}
+
+                              /* section-2 */
+.section-2{
+    margin-top: 74px;
+    width: 100%;
+    height: 60vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.section-2 h1{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.card-body{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    height: 52vh;
+    width: 20vw;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px grey ;
+    padding: 2px;
+}
+.card img{
+    height: 20%;
+    width: 40%;
+}
+.card button{
+    color: white;
+    background-color: #495086;
+    height: 6vh;
+    width: 10vw;
+    font-size: large;
+
+}
+
+/* section-3 */
+.section-3{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+    height: 70vh;
+
+}
+.txtCont{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 0px 20px;
+}
+.txtCont h1{
+    font-size: 3rem;
+}
+
+.txtCont li{
+    list-style: none;
+}
+.txtCont button{
+    width: 12vw;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #495086;   
+    color: white;
+    font-size: large;
+}
+.imgcont{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.img-2{
+    width: 40vw;
+    height: 60vh;
+    border-bottom: 10px solid #505364;
+    border-top-right-radius: 60px;
+}
+
+/* section-4 */
+
+.section-4{
+    display: flex;
+    justify-content: space-around;
+    gap: 50px;
+    width: 100%;
+    height: 70vh;
+}
+.img-3{
+    width: 40vw;
+    height: 60vh;
+    border-top: 10px solid #505364;
+    border-bottom-left-radius: 60px;
+}
+
+
+/* section -5 */
+.section-5{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 100%;
+    height: 60vh;
+    margin-top: 40px;
+    background-color: rgb(189 186 186 / 24%);
+}
+.conts{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 12vh;
+}
+.conts button{
+    width: 12vw;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #495086;   
+    color: white;
+    font-size: large;
+}
+
+/* ----------------------here--------------------------------- */
+.cardBody{ 
+    width: 100%;
+    white-space: nowrap; /* so box does not go in next line */
+    overflow-x: auto; /* so full body scrollbar doesnt*/
+}
+
+.cardBody::-webkit-scrollbar{
+    display: none; /* so scroll bar doesnt appear */
+}
+
+.contain{
+    animation-name: move;
+    animation-duration:15s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+/* created new div box-cont around every box so i can add css to it without affacting you box css */
+
+.box-cont{
+    display: inline-block; /* so all boxes appear in a single line */
+}
+
+.box{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    white-space: wrap;
+    margin: 0 30px;
+    gap: 30px;
+    height: 35vh;
+    width: 20vw;
+    box-shadow: 2px 2px 5px grey ;
+    padding: 2px;
+}
+/* ---------animations--------------- */
+@keyframes move {
+    from {
+      transform: translateX(0);
+    }
+    
+    to {
+      transform: translateX(-94.5%);
+      /* had to adjust value bcoz your cards hvae different length and size than mine */
+    }
+  }
+/* ----------------- */
+.persons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.persons img{
+    height: 8vh;
+    width: 4vw;
+    border-radius: 50%;
+}
+
+/* section-6 */
+.section-6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    height: 90vh;
+}
+
+.part-1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+}
+.part-2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 35%;
+    position: relative;
+    top: 8%;
+}
+
+.crd{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* background-color: #dcdde1c3; */
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px grey;
+    width: 25vw;
+    height: 35vh;
+    padding-left: 20px;
+    gap: 12px;
+}
+.crd img{
+    width: 8vw;
+    height: 8vh;
+    border-radius: 50%;
+    border: 1px solid grey;
+}
+.blue{
+    background-color: #0f1c7e;
+    color: white;
+
+}
+
+.part-3{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 20%;
+}
+
+/* section-7 */
+.section-7{
+    width: 100%;
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formpage{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 30px;
+}
+.formpage form{
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
+}
+.formpage form input{
+    padding: 12px;
+    width: 70%;
+}
+.formpage button{
+    width: 15vw;
+    height: 7vh;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: #495086;   
+    color: white;
+    font-size: large;   
+}
+.info{
+    display: flex;
+    gap: 20px;
+}
+
+
+.whitebox{
+    height: 100%;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.whitebox div{
+    padding: 20px;
+    width: 30vw;
+    height: 60vh;
+    border-radius: 20px;
+    box-shadow: 2px 2px 5px grey;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: cyan;
+    height: 35vh;
+    width: 100%;
+}
+
+.footer-1{
+    height: 30vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+.foot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    width: 30%;
+    height: 20vh;
+}
+.about div{
+    padding-left: 30px;
+}
+
+.we img{
+    height: 5vh;
+    width: 5vw;
+}
+.foot li{
+    list-style: none;
+}
+.bl{
+    border-left: 2px solid grey;
+}
+.bt{
+    border-top: 2px solid grey ;
+}
+.footer-2{
+    width: 100%;
+    text-align: center;
+}
